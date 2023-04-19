@@ -3,15 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 20px 0;
+            position: relative;
+        }
+        li a {
+            display: block;
+            padding: 80px;
+            background-color: #ffffff;
+            border-radius: 0px;
+        }
+        li img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 390px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 0%;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+    </style>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="recipes/Pizza.html">Pizza</a></li>
-        <li><a href="recipes/spaghetti.html">Spaghetti</a></li>
-        <li><a href="recipes/burger.html">Burger</a></li>
-    </ul>
-
-    
+    <div class="container">
+        <h1>Odin Recipes</h1>
+        <ul>
+            <li>
+                <a href="recipes/Pizza.html">
+                    <img src="recipes/img/cheese-pizza.jpg" alt="Pizza">
+                    Pizza
+                </a>
+            </li>
+            <li>
+                <a href="recipes/spaghetti.html">
+                    <img src="recipes/img/spaghetti.jpg" alt="Spaghetti">
+                    Spaghetti
+                </a>
+            </li>
+            <li>
+                <a href="recipes/burger.html">
+                    <img src="recipes/img/burger.jpg" alt="Burger">
+                    Burger
+                </a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
