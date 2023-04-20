@@ -15,7 +15,6 @@
         }
         h1 {
             text-align: center;
-            
         }
         ul {
             list-style: none;
@@ -26,23 +25,29 @@
             position: relative;
         }
         li a {
-            display: block;
-            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
             background-color: #ffffff;
             border-radius: 0px;
         }
         li img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 390px;
-    height: 175px;
-    object-fit: cover;
-    border-radius: 0%;
-    border: 3px solid rgb(255, 255, 255);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-}
+            width: 390px;
+            height: 175px;
+            object-fit: cover;
+            border-radius: 0%;
+            border: 3px solid rgb(255, 255, 255);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+        li .img-container {
+            position: relative;
+        }
+        li .img-text {
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -51,20 +56,22 @@
         <ul>
             <li>
                 <a href="recipes/Pizza.html">
-                    <img src="recipes/img/cheese-pizza.jpg" alt="Pizza">
-                    Pizza
+                    <div class="img-container">
+                        <img src="recipes/img/cheese-pizza.jpg" alt="Pizza">
+                    </div>
+                    <div class="img-text">Pizza</div>
                 </a>
             </li>
             <li>
                 <a href="recipes/spaghetti.html">
                     <img src="recipes/img/spaghetti.jpg" alt="Spaghetti">
-                    Spaghetti
+                    <div class="img-text">Spaghetti</div>
                 </a>
             </li>
             <li>
                 <a href="recipes/burger.html">
                     <img src="recipes/img/burger.jpg" alt="Burger">
-                    Burger
+                    <div class="img-text">Burger</div>
                 </a>
             </li>
         </ul>
